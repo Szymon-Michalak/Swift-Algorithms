@@ -14,15 +14,16 @@ The only input line contains an integer $n$.
 #### Output
 
 Print a line that contains all values of n during the algorithm.
+Return a string that contains the values of $n$ separated by a single an arrow surrounded by spaces " -> ".
 
 #### Constraints
-$$ 1 \le n \le 106 $$
+
+$$ 1 \le n \le 10^6 $$
 
 #### Example
 
-```tex
-Input: 
-3
-Output:
-3105168421
-```
+> **Input:**  
+> 3
+>
+> **Output:**  
+> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
