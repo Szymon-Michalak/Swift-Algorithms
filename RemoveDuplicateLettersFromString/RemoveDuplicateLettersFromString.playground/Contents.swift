@@ -1,5 +1,7 @@
+// MARK: - Imports
 import Foundation
-// Solution
+
+// MARK: - Solution
 func removeDuplicateLettersFromString(from string: String) -> String {
     let array = Array(string)
     let orderedSet = NSOrderedSet(array: array)
@@ -13,7 +15,7 @@ func removeDuplicateLettersFromStringAlt(from string: String) -> String {
     return stringWithoutDuplicates
 }
 
-//Tests
+// MARK: - Tests
 
 assert(removeDuplicateLettersFromString(from: "wombat") == "wombat", "Test 1 failed")
 assert(removeDuplicateLettersFromString(from: "hello") == "helo", "Test 2 failed")

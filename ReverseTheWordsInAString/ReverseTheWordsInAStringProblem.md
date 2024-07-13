@@ -1,29 +1,32 @@
-# Reverse the words in a string
+# Reverse the Words in a String
 
-## Problem
-
+## Problem Description
 Write a function that returns a string with each of its words reversed but in the original order, without using a loop.
 
-#### Input
+## Input
+- A single string.
 
-Function accepts a string.
+## Output
+- A string with words in the same order but with the letters in each word reversed.
 
-#### Output
+## Constraints
+- The function should not use a `for` loop.
 
-Function returns a string with words in the same order but with letter in words reversed.
-
-#### Constraints
-
-N/A
-
-#### Example
-
+## Example
 > **Input:**  
 > "Swift Coding Challenges"  
+>
 > **Output:**  
-> "tfiwS gnidoC segnellahC"
+> "tfiwS gnidoC segnellahC"  
+>
+> **Explanation:**  
+> The words "Swift", "Coding", and "Challenges" are reversed individually to "tfiwS", "gnidoC", and "segnellahC" respectively, but remain in the same order.
 
 > **Input:**  
 > "The quick brown fox"  
+>
 > **Output:**  
-> "ehT kciuq nworb xof"
+> "ehT kciuq nworb xof"  
+>
+> **Explanation:**  
+> The words "The", "quick", "brown", and "fox" are reversed individually to "ehT", "kciuq", "nworb", and "xof" respectively, but remain in the same order.

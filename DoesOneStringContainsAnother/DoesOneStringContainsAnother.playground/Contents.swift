@@ -1,6 +1,7 @@
-// Imports
+// MARK: - Imports
 import Foundation // range(of: )
-// Solution
+
+// MARK: - Solution
 extension String {
     func fuzzyContain(_ string: String) -> Bool {
         let lowercasedSelf = self.lowercased()
@@ -13,7 +14,7 @@ extension String {
     }
 }
 
-//Tests
+// MARK: - Tests
 assert("Hello, world".fuzzyContain("Hello") == true, "Test 1 failed")
 assert("Hello, world".fuzzyContain("WORLD") == true, "Test 2 failed")
 assert("Hello, world".fuzzyContain("Goodbye") == false, "Test 3 failed")

@@ -1,4 +1,5 @@
-// Solution
+// MARK: - Solution
+
 func countTheCharacters(in string: String, of characterToCount: Character) -> Int {
     var count: Int = 0
 
@@ -18,8 +19,7 @@ func countTheCharactersAlt2(in string: String, of characterToCount: Character) -
     string.reduce(0) { $1 == characterToCount ? $0 + 1 : $0 }
 }
 
-//Tests
-
+// MARK: - Tests
 
 assert(countTheCharacters(in: "The rain in Spain", of: "a") == 2, "Test 1 failed")
 assert(countTheCharacters(in: "Mississippi", of: "i") == 4, "Test 2 failed")

@@ -1,41 +1,56 @@
-# String is rotated
+# String is Rotated
 
-## Problem
+## Problem Description
+Write a function that accepts two strings and returns `true` if one string is a rotation of the other, taking letter case into account.
 
-Write a function that accepts two strings, and returns true if one string is rotation of the other, taking letter case into account.
 Tip: A string rotation is when you take a string, remove some letters from its end, then append them to the front. For example, “swift” rotated by two characters would be “ftswi”.
 
-#### Input
+## Input
+- Two strings.
 
-Function accepts string as parameter.
+## Output
+- A boolean value: `true` if one string is a rotation of the other, `false` otherwise.
 
-#### Output
+## Constraints
+- The function should consider letter case (e.g., 'A' is different from 'a').
 
-Function outputs 
-#### Constraints
-
-#### Example
-
+## Example
 > **Input:**  
 > "abcde"  
 > "eabcd"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> The string "eabcd" is a rotation of "abcde" by one character.
 
 > **Input:**  
 > "abcde"  
 > "cdeab"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> The string "cdeab" is a rotation of "abcde" by three characters.
 
 > **Input:**  
 > "abcde"  
 > "abced"  
+>
 > **Output:**  
-> false
+> false  
+>
+> **Explanation:**  
+> The string "abced" is not a rotation of "abcde".
 
 > **Input:**  
 > "abc"  
 > "a"  
+>
 > **Output:**  
-> false
+> false  
+>
+> **Explanation:**  
+> The strings "abc" and "a" do not have the same length, so one cannot be a rotation of the other.

@@ -1,6 +1,9 @@
-// Imports
+// MARK: - Imports
+
 import Foundation // .replacingOccurrences(of: , with: , options: , range: )
-// Solution
+
+// MARK: - Solution
+
 func condenseWhitespace(in string: String) -> String {
     return string.replacingOccurrences(of: " +", with: " ", options: .regularExpression, range: nil)
 }
@@ -22,7 +25,8 @@ func condenseWhitespaceAlt(in string: String) -> String {
     return returnString
 }
 
-//Tests
+// MARK: - Tests
+
 assert(condenseWhitespace(in: "a   b   c") == "a b c", "Test 1 failed")
 assert(condenseWhitespace(in: "    a") == " a", "Test 2 failed")
 assert(condenseWhitespace(in: "abc") == "abc", "Test 3 failed")

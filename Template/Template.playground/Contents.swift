@@ -1,9 +1,7 @@
-// Solution
-func templateSolution(for number: Int) -> Bool {
-    var number = number
+// MARK: - Imports
 
-    return number.isMultiple(of: 2)
-}
+// MARK: - Solution
 
-//Tests
-assert(templateSolution(for: 24) == false, "Test 1 failed")
+// MARK: - Tests
+
+// MARK: - Tests Helpers

@@ -1,37 +1,44 @@
-# Does one string contain another?
+# Does One String Contain Another?
 
-## Problem
+## Problem Description
+Write your own version of the `contains()` method on `String` that ignores letter case, and does not use the existing `contains()` method.
 
-Write your own version of the contains() method on String that ignores letter case, and without using the existing contains() method.
+## Input
+- The function should be an extension on `String` that accepts a string as a parameter.
 
-#### Input
+## Output
+- A boolean value: `true` if the original string contains the given substring, ignoring letter case; otherwise, `false`.
 
-Should be an extension on String that accepts a string as a parameter
+## Constraints
+- The comparison should ignore letter case.
 
-#### Output
-
-Acts like a Swift's contains() method
-
-#### Constraints
-
-N/A
-
-#### Example
-
+## Example
 > **Input:**  
 > "Hello, world"  
 > "Hello"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> The original string "Hello, world" contains the substring "Hello", ignoring case.
 
 > **Input:**  
 > "Hello, world"  
 > "WORLD"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> The original string "Hello, world" contains the substring "WORLD", ignoring case.
 
 > **Input:**  
 > "Hello, world"  
 > "Goodbye"  
+>
 > **Output:**  
-> false
+> false  
+>
+> **Explanation:**  
+> The original string "Hello, world" does not contain the substring "Goodbye".

@@ -1,35 +1,47 @@
-# Count the characters
+# Count the Characters
 
-## Problem
+## Problem Description
+Write a function that accepts a string and a character, and returns the number of times the specific character appears in the string, taking case into account. 
 
-Write a function that accepts a string, and returns how many times a specific character appears, taking case into account.
-Tip: If you can solve this without using a for-in loop, you can consider it a Tricky challenge.
+Tip: If you can solve this without using a `for-in` loop, you can consider it a tricky challenge.
 
-#### Input
-Function accepts a string and a character.
+## Input
+- A string.
+- A single character.
 
-#### Output
-Function returns an integer.
+## Output
+- An integer representing the number of times the specified character appears in the input string.
 
-#### Constraints
-N/A
+## Constraints
+- The function should take case into account (e.g., 'a' is different from 'A').
 
-#### Example
-
+## Example
 > **Input:**  
 > "The rain in Spain"  
-> "a"  
+> Character: "a"  
+>
 > **Output:**  
-> 2
+> 2  
+>
+> **Explanation:**  
+> The character 'a' appears 2 times in the string.
 
 > **Input:**  
 > "Mississippi"  
-> "i"  
+> Character: "i"  
+>
 > **Output:**  
-> 4
+> 4  
+>
+> **Explanation:**  
+> The character 'i' appears 4 times in the string.
 
 > **Input:**  
 > "Hacking with Swift"  
-> "i"  
+> Character: "i"  
+>
 > **Output:**  
-> 3
+> 3  
+>
+> **Explanation:**  
+> The character 'i' appears 3 times in the string.

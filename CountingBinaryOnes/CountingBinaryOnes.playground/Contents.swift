@@ -1,4 +1,5 @@
-// Solution
+// MARK: - Solution
+
 func nextHighestAndLowestWithSameNumberOfOnes(_ number: Int) -> (Int?, Int?) {
     func countOnes(in number: Int) -> Int {
         let binaryNumber = String(number, radix: 2)
@@ -26,6 +27,7 @@ func nextHighestAndLowestWithSameNumberOfOnes(_ number: Int) -> (Int?, Int?) {
     return (nextLowest, nextHighest)
 }
 
-//Tests
+// MARK: - Tests
+
 assert(nextHighestAndLowestWithSameNumberOfOnes(12) == (10, 17), "Test 1 failed")
 assert(nextHighestAndLowestWithSameNumberOfOnes(28) == (26, 35), "Test 2 failed")

@@ -1,4 +1,4 @@
-// Solution
+// MARK: - Solution
 func runLengthEncoding(of string: String) -> String {
 
     guard string.count > 1 else { return string }
@@ -27,9 +27,7 @@ func runLengthEncoding(of string: String) -> String {
     return returnString
 }
 
-//Tests
+// MARK: - Tests
 assert(runLengthEncoding(of: "aabbcc") == "a2b2c2", "Test 1 failed")
 assert(runLengthEncoding(of: "aaabaaabaaa") == "a3b1a3b1a3", "Test 2 failed")
 assert(runLengthEncoding(of: "aaAAaa") == "a2A2a2", "Test 3 failed")
-
-

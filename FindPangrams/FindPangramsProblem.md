@@ -1,30 +1,34 @@
-# Find pangrams
+# Find Pangrams
 
-## Problem
+## Problem Description
+Write a function that returns `true` if it is given a string that is an English pangram, ignoring letter case. 
 
-Write a function that returns true if it is given a string that is an English pangram, ignoring letter case.
 Tip: A pangram is a string that contains every letter of the alphabet at least once.
 
-#### Input
+## Input
+- A single string.
 
-Function accepts a string as an argument.
+## Output
+- A boolean value: `true` if the given string is a pangram, `false` otherwise.
 
-#### Output
+## Constraints
+- The function should ignore letter case when checking for a pangram.
 
-Function should return a boolean value. True if given string is a pangram, false otherwise.
-
-#### Constraints
-
-N/A
-
-#### Example
-
+## Example
 > **Input:**  
 > "The quick brown fox jumps over the lazy dog"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> The input string contains every letter of the English alphabet at least once.
 
 > **Input:**  
 > "The quick brown fox jumped over the lazy dog"  
+>
 > **Output:**  
-> false
+> false  
+>
+> **Explanation:**  
+> The input string is missing the letter 's', so it is not a pangram.

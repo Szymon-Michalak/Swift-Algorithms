@@ -1,5 +1,4 @@
-
-// Solution
+// MARK: - Solution
 func permutations(of string: String) -> [String] {
     let strArray = Array(string)
     let length = strArray.count
@@ -30,7 +29,7 @@ func permutations(of string: String) -> [String] {
     return result
 }
 
-// Tests
+// MARK: - Tests
 assert(permutations(of: "a") == ["a"], "Test 1 failed")
 assert(Set(permutations(of: "ab")) == Set(["ab", "ba"]), "Test 2 failed")
 assert(Set(permutations(of: "abc")) == Set(["abc", "acb", "bac", "bca", "cab", "cba"]), "Test 3 failed")

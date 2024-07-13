@@ -1,39 +1,51 @@
 # Is A String A Palindrome
 
-## Problem
-Write a function that accepts a String as its only parameter, and returns true if the string reads the same when reversed, ignoring case.
+## Problem Description
+Write a function that accepts a string as its only parameter and returns `true` if the string reads the same when reversed, ignoring case.
 
-#### Input
-Function should accept a string as a parameter.
+## Input
+- A single string.
 
-#### Output
-Function should return true if the string is a palindrome, false if it is not.
+## Output
+- A boolean value: `true` if the string is a palindrome, `false` otherwise.
 
-#### Constraints
-N/A
+## Constraints
+- The comparison should ignore case.
+- Only alphanumeric characters should be considered (ignore spaces, punctuation, etc.).
 
-#### Example
+## Example
+> **Input:**  
+> "rotator"  
+>
+> **Output:**  
+> true  
+>
+> **Explanation:**  
+> The string "rotator" reads the same forwards and backwards.
 
 > **Input:**  
-> "rotator"
-> 
+> "Rats live on no evil star"  
+>
 > **Output:**  
-> true
+> true  
+>
+> **Explanation:**  
+> Ignoring case and spaces, the string reads the same forwards and backwards.
 
 > **Input:**  
-> "Rats live on no evil star"
-> 
+> "Never odd or even"  
+>
 > **Output:**  
-> true
+> false  
+>
+> **Explanation:**  
+> Ignoring case and spaces, the string does not read the same forwards and backwards.
 
 > **Input:**  
-> "Never odd or even"
-> 
+> "Hello, world"  
+>
 > **Output:**  
-> false
-
-> **Input:**  
-> "Hello, world"
-> 
-> **Output:**  
-> false
+> false  
+>
+> **Explanation:**  
+> The string "Hello, world" does not read the same forwards and backwards, even ignoring case.

@@ -1,4 +1,4 @@
-// Solution
+// MARK: - Solution
 func sieveOfEratosthenes(_ number: Int) -> [Int] {
     var sieve: [Bool] = Array(repeating: true, count: number + 1)
 
@@ -16,10 +16,9 @@ func sieveOfEratosthenes(_ number: Int) -> [Int] {
     return sieve.enumerated().filter { $0.element }.map { $0.offset }
 }
 
-//Tests
+// MARK: - Tests
 assert(sieveOfEratosthenes(10) == [2, 3, 5, 7], "Test 1 failed")
 assert(sieveOfEratosthenes(20) == [2, 3, 5, 7, 11, 13, 17, 19], "Test 2 failed")
 assert(sieveOfEratosthenes(50) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47], "Test 3 failed")
 assert(sieveOfEratosthenes(2) == [2], "Test 4 failed")
 assert(sieveOfEratosthenes(100) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97], "Test 5 failed")
-

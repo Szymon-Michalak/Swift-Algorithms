@@ -1,4 +1,4 @@
-// Solution
+// MARK: - Solution
 func countVowelsAndConsonants(in string: String) -> (Int, Int) {
     let vowels = Set("aeiou")
     let consonants = Set("bcdfghjklmnpqrstvwxyz")
@@ -13,6 +13,6 @@ func countVowelsAndConsonants(in string: String) -> (Int, Int) {
     return count
 }
 
-//Tests
+// MARK: - Tests
 assert(countVowelsAndConsonants(in: "Swift Coding Challenges") == (6, 15), "Test 1 failed")
 assert(countVowelsAndConsonants(in: "Mississippi") == (4, 7), "Test 2 failed")

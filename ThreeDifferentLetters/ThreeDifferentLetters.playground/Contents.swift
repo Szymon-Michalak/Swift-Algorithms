@@ -1,4 +1,4 @@
-// Solution
+// MARK: - Solution
 func areWithinThreeEdits(_ string1: String, _ string2: String) -> Bool {
     guard string1.count == string2.count else { return false }
 
@@ -14,7 +14,7 @@ func areWithinThreeEdits(_ string1: String, _ string2: String) -> Bool {
     return true
 }
 
-//Tests
+// MARK: - Tests
 
 assert(areWithinThreeEdits("Clamp", "Cramp") == true, "Test 1 failed")
 assert(areWithinThreeEdits("Clamp", "Crams") == true, "Test 2 failed")

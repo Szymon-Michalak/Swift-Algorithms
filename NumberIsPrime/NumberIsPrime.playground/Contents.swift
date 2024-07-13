@@ -1,6 +1,7 @@
-// Imports
+// MARK: - Imports
 import Foundation
-// Solution
+
+// MARK: - Solution
 func isPrime(_ number: Int) -> Bool {
     guard number > 0 else { return false }
     if number == 2 { return true }
@@ -15,11 +16,9 @@ func isPrime(_ number: Int) -> Bool {
     return true
 }
 
-//Tests
+// MARK: - Tests
 assert(isPrime(11) == true, "Test 1 failed")
 assert(isPrime(13) == true, "Test 2 failed")
 assert(isPrime(4) == false, "Test 3 failed")
 assert(isPrime(9) == false, "Test 4 failed")
 assert(isPrime(16777259) == true, "Test 5 failed")
-
-

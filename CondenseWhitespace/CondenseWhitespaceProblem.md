@@ -1,48 +1,53 @@
-# Condense whitespace
+# Condense Whitespace
 
-## Problem
+## Problem Description
+Write a function that returns a string with any consecutive spaces replaced with a single space. The function `removeExtraSpaces` should remove extra spaces between characters in a string, keeping only one space where multiple spaces were present.
 
-Write a function that returns a string with any consecutive spaces replaced with a single space.
+## Input
+- A single string.
 
-Note: The function `removeExtraSpaces` should be implemented to remove extra spaces between characters in a string, keeping only one space where multiple spaces were present.
+## Output
+- A string with any consecutive spaces replaced with a single space.
 
-#### Input
+## Constraints
+- The input string may contain any number of spaces, including leading, trailing, and multiple consecutive spaces between words.
 
-Function accepts a string as input.
-
-#### Output
-
-Function returns a string with any consecutive spaces replaced with a single space.
-
-#### Constraints
-
-N/A
-
-#### Example
-
+## Example
 > **Input:**  
-> ```
-> "a   b   c"
-> ```
-> **Output:**  
-> ```
-> "a b c"
-> ```
-
-> **Input:**  
-> ```
-> "    a"
 > ```  
+> "a   b   c"  
+> ```  
+>
 > **Output:**  
-> ```
-> " a"
-> ```
+> ```  
+> "a b c"  
+> ```  
+>
+> **Explanation:**  
+> The input string has multiple consecutive spaces between 'a', 'b', and 'c'. These are replaced with single spaces.
 
 > **Input:**  
-> ```
-> "abc"
-> ```
+> ```  
+> "    a"  
+> ```  
+>
 > **Output:**  
-> ```
-> "abc"
-> ```
+> ```  
+> " a"  
+> ```  
+>
+> **Explanation:**  
+> The input string has leading spaces which are condensed to a single space before 'a'.
+
+> **Input:**  
+> ```  
+> "abc"  
+> ```  
+>
+> **Output:**  
+> ```  
+> "abc"  
+> ```  
+>
+> **Explanation:**  
+> The input string has no extra spaces, so it remains unchanged.
